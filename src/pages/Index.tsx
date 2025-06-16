@@ -41,7 +41,7 @@ const Index = () => {
                 Start Your Transformation
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-black text-lg px-8 py-3">
+              <Button size="lg" className="bg-white text-black text-lg px-8 py-3">
                 Learn More
               </Button>
             </div>
