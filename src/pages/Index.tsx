@@ -29,16 +29,16 @@ const Index = () => {
         <div className="container mx-auto text-center">
           <div className="animate-fade-in">
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-              Transform Your
-              <span className="bg-gradient-to-r from-blue-400 to-blue-200 bg-clip-text text-transparent"> Digital Future</span>
+              We are 
+              <span className="bg-gradient-to-r from-blue-400 to-blue-200 bg-clip-text text-transparent"> shift*</span>
             </h1>
             <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
-              We help businesses shift into the digital age with cutting-edge solutions, 
-              innovative strategies, and unparalleled expertise.
+              shift* is a UK-based technology solutions provider specialising in digital transformation, 
+              cloud migration, cybersecurity, and IT infrastructure optimisation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white text-lg px-8 py-3">
-                Start Your Transformation
+                Get in touch
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
               <Button size="lg" className="bg-white text-black text-lg px-8 py-3">
@@ -53,9 +53,9 @@ const Index = () => {
       <section id="solutions" className="py-20 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-4">Our Solutions</h2>
+            <h2 className="text-4xl font-bold text-white mb-4">Solutions</h2>
             <p className="text-white/80 text-lg max-w-2xl mx-auto">
-              Comprehensive digital solutions tailored to your business needs
+              We provide comprehensive technology solutions tailored to your business needs
             </p>
           </div>
           
@@ -63,29 +63,29 @@ const Index = () => {
             <Card className="bg-black/50 backdrop-blur-md border-blue-500/30 hover:bg-black/70 transition-all duration-300 hover:scale-105">
               <CardContent className="p-8 text-center">
                 <Cloud className="h-12 w-12 text-blue-400 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-white mb-3">Cloud Infrastructure</h3>
+                <h3 className="text-xl font-semibold text-white mb-3">Cloud Solutions</h3>
                 <p className="text-white/80">
-                  Scalable cloud solutions to power your digital transformation journey.
+                  Seamless cloud migration and optimisation services to modernise your infrastructure.
                 </p>
               </CardContent>
             </Card>
 
             <Card className="bg-black/50 backdrop-blur-md border-blue-500/30 hover:bg-black/70 transition-all duration-300 hover:scale-105">
               <CardContent className="p-8 text-center">
-                <Database className="h-12 w-12 text-blue-300 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-white mb-3">Data Analytics</h3>
+                <Shield className="h-12 w-12 text-blue-300 mx-auto mb-4" />
+                <h3 className="text-xl font-semibold text-white mb-3">Cybersecurity</h3>
                 <p className="text-white/80">
-                  Turn your data into actionable insights with advanced analytics platforms.
+                  Advanced security solutions to protect your digital assets and ensure compliance.
                 </p>
               </CardContent>
             </Card>
 
             <Card className="bg-black/50 backdrop-blur-md border-blue-500/30 hover:bg-black/70 transition-all duration-300 hover:scale-105">
               <CardContent className="p-8 text-center">
-                <Smartphone className="h-12 w-12 text-blue-200 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-white mb-3">Mobile Solutions</h3>
+                <Database className="h-12 w-12 text-blue-200 mx-auto mb-4" />
+                <h3 className="text-xl font-semibold text-white mb-3">Data & Analytics</h3>
                 <p className="text-white/80">
-                  Native and cross-platform mobile applications for modern businesses.
+                  Transform your data into actionable insights with our analytics platforms.
                 </p>
               </CardContent>
             </Card>
@@ -97,9 +97,9 @@ const Index = () => {
       <section id="industries" className="py-20 px-4 bg-blue-900/20">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-4">Industries We Serve</h2>
+            <h2 className="text-4xl font-bold text-white mb-4">Industries</h2>
             <p className="text-white/80 text-lg max-w-2xl mx-auto">
-              Specialized expertise across diverse industry verticals
+              We serve clients across various industry sectors with specialised expertise
             </p>
           </div>
           
@@ -108,7 +108,7 @@ const Index = () => {
               <CardContent className="p-6 text-center">
                 <Building className="h-10 w-10 text-blue-400 mx-auto mb-3" />
                 <h3 className="text-lg font-semibold text-white mb-2">Financial Services</h3>
-                <p className="text-white/70 text-sm">Banking, insurance, and fintech solutions</p>
+                <p className="text-white/70 text-sm">Banking, insurance, and investment solutions</p>
               </CardContent>
             </Card>
 
@@ -123,8 +123,8 @@ const Index = () => {
             <Card className="bg-black/30 backdrop-blur-md border-blue-500/30 hover:bg-black/50 transition-all duration-300">
               <CardContent className="p-6 text-center">
                 <TrendingUp className="h-10 w-10 text-blue-200 mx-auto mb-3" />
-                <h3 className="text-lg font-semibold text-white mb-2">Retail & E-commerce</h3>
-                <p className="text-white/70 text-sm">Modern commerce platforms and solutions</p>
+                <h3 className="text-lg font-semibold text-white mb-2">Retail</h3>
+                <p className="text-white/70 text-sm">Modern retail and e-commerce platforms</p>
               </CardContent>
             </Card>
 
@@ -143,9 +143,9 @@ const Index = () => {
       <section id="services" className="py-20 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-4">Our Services</h2>
+            <h2 className="text-4xl font-bold text-white mb-4">Services</h2>
             <p className="text-white/80 text-lg max-w-2xl mx-auto">
-              End-to-end digital services to accelerate your business growth
+              Comprehensive technology services to drive your business forward
             </p>
           </div>
           
@@ -155,17 +155,17 @@ const Index = () => {
                 <Zap className="h-12 w-12 text-blue-400 mx-auto mb-4" />
                 <h3 className="text-xl font-semibold text-white mb-3">Digital Transformation</h3>
                 <p className="text-white/80">
-                  Modernize your business processes and embrace digital innovation for sustainable growth.
+                  Strategic digital transformation to modernise your business operations and processes.
                 </p>
               </CardContent>
             </Card>
 
             <Card className="bg-black/50 backdrop-blur-md border-blue-500/30 hover:bg-black/70 transition-all duration-300 hover:scale-105">
               <CardContent className="p-8 text-center">
-                <Shield className="h-12 w-12 text-blue-300 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-white mb-3">Cybersecurity Solutions</h3>
+                <Cloud className="h-12 w-12 text-blue-300 mx-auto mb-4" />
+                <h3 className="text-xl font-semibold text-white mb-3">Cloud Migration</h3>
                 <p className="text-white/80">
-                  Protect your digital assets with enterprise-grade security solutions and monitoring.
+                  Seamless migration of your applications and data to cloud platforms with minimal downtime.
                 </p>
               </CardContent>
             </Card>
@@ -173,9 +173,9 @@ const Index = () => {
             <Card className="bg-black/50 backdrop-blur-md border-blue-500/30 hover:bg-black/70 transition-all duration-300 hover:scale-105">
               <CardContent className="p-8 text-center">
                 <Users className="h-12 w-12 text-blue-200 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-white mb-3">Consulting & Strategy</h3>
+                <h3 className="text-xl font-semibold text-white mb-3">IT Consulting</h3>
                 <p className="text-white/80">
-                  Expert guidance to develop and implement digital strategies that drive results.
+                  Expert guidance and strategic advice to optimise your technology investments.
                 </p>
               </CardContent>
             </Card>
@@ -188,28 +188,29 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold text-white mb-6">Why Choose shift*?</h2>
+              <h2 className="text-4xl font-bold text-white mb-6">About shift*</h2>
               <p className="text-white/90 text-lg mb-8">
-                We're not just another tech company. We're your partners in digital transformation, 
-                committed to delivering solutions that make a real difference to your business.
+                Based in the UK, shift* is your trusted partner for digital transformation. 
+                We specialise in helping businesses navigate the complexities of modern technology 
+                and achieve their digital goals.
               </p>
               
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="h-6 w-6 text-blue-400" />
-                  <span className="text-white">10+ Years of Industry Experience</span>
+                  <span className="text-white">UK-based technology expertise</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="h-6 w-6 text-blue-400" />
-                  <span className="text-white">500+ Successful Projects Delivered</span>
+                  <span className="text-white">Proven track record of success</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="h-6 w-6 text-blue-400" />
-                  <span className="text-white">24/7 Support & Maintenance</span>
+                  <span className="text-white">Comprehensive support services</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="h-6 w-6 text-blue-400" />
-                  <span className="text-white">Cutting-Edge Technology Stack</span>
+                  <span className="text-white">Industry-leading security standards</span>
                 </div>
               </div>
             </div>
@@ -217,11 +218,11 @@ const Index = () => {
             <div className="relative">
               <div className="bg-black/40 rounded-2xl p-8 backdrop-blur-sm border border-blue-500/30">
                 <div className="text-center">
-                  <div className="text-5xl font-bold text-white mb-2">99.9%</div>
-                  <div className="text-white/80 mb-4">Uptime Guarantee</div>
+                  <div className="text-5xl font-bold text-white mb-2">100%</div>
+                  <div className="text-white/80 mb-4">Client Satisfaction</div>
                   <div className="h-px bg-gradient-to-r from-transparent via-blue-400/50 to-transparent mb-4"></div>
                   <div className="text-3xl font-bold text-blue-400 mb-2">24/7</div>
-                  <div className="text-white/80">Expert Support</div>
+                  <div className="text-white/80">Support Available</div>
                 </div>
               </div>
             </div>
@@ -233,9 +234,9 @@ const Index = () => {
       <section id="careers" className="py-20 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-4">Join Our Team</h2>
+            <h2 className="text-4xl font-bold text-white mb-4">Careers</h2>
             <p className="text-white/80 text-lg max-w-2xl mx-auto">
-              Be part of a dynamic team that's shaping the future of digital transformation
+              Join our growing team and be part of the digital transformation revolution
             </p>
           </div>
 
@@ -243,9 +244,9 @@ const Index = () => {
             <Card className="bg-black/30 backdrop-blur-md border-blue-500/30 hover:bg-black/50 transition-all duration-300">
               <CardContent className="p-6 text-center">
                 <Target className="h-12 w-12 text-blue-400 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-white mb-3">Innovation First</h3>
+                <h3 className="text-xl font-semibold text-white mb-3">Innovation</h3>
                 <p className="text-white/80">
-                  Work with cutting-edge technologies and pioneering solutions.
+                  Work with cutting-edge technologies and innovative solutions.
                 </p>
               </CardContent>
             </Card>
@@ -253,9 +254,9 @@ const Index = () => {
             <Card className="bg-black/30 backdrop-blur-md border-blue-500/30 hover:bg-black/50 transition-all duration-300">
               <CardContent className="p-6 text-center">
                 <Award className="h-12 w-12 text-blue-300 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-white mb-3">Growth Opportunities</h3>
+                <h3 className="text-xl font-semibold text-white mb-3">Growth</h3>
                 <p className="text-white/80">
-                  Continuous learning and career advancement in a supportive environment.
+                  Continuous learning and professional development opportunities.
                 </p>
               </CardContent>
             </Card>
@@ -263,9 +264,9 @@ const Index = () => {
             <Card className="bg-black/30 backdrop-blur-md border-blue-500/30 hover:bg-black/50 transition-all duration-300">
               <CardContent className="p-6 text-center">
                 <Briefcase className="h-12 w-12 text-blue-200 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-white mb-3">Work-Life Balance</h3>
+                <h3 className="text-xl font-semibold text-white mb-3">Balance</h3>
                 <p className="text-white/80">
-                  Flexible working arrangements and comprehensive benefits package.
+                  Flexible working arrangements and comprehensive benefits.
                 </p>
               </CardContent>
             </Card>
@@ -273,7 +274,7 @@ const Index = () => {
 
           <div className="text-center">
             <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white text-lg px-8 py-3">
-              View Open Positions
+              View Opportunities
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </div>
@@ -284,35 +285,35 @@ const Index = () => {
       <section id="contact" className="py-20 px-4 bg-blue-900/20">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-4">Get In Touch</h2>
+            <h2 className="text-4xl font-bold text-white mb-4">Contact</h2>
             <p className="text-white/80 text-lg max-w-2xl mx-auto">
-              Ready to start your digital transformation? Let's discuss how we can help your business grow.
+              Ready to start your digital transformation journey? Get in touch with our team.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
             <div>
-              <h3 className="text-2xl font-semibold text-white mb-6">Contact Information</h3>
+              <h3 className="text-2xl font-semibold text-white mb-6">Get in Touch</h3>
               <div className="space-y-6">
                 <div className="flex items-center space-x-4">
                   <Mail className="h-6 w-6 text-blue-400" />
                   <div>
                     <div className="text-white font-medium">Email</div>
-                    <div className="text-white/80">hello@shift.io</div>
+                    <div className="text-white/80">hello@sshift.io</div>
                   </div>
                 </div>
                 <div className="flex items-center space-x-4">
                   <Phone className="h-6 w-6 text-blue-300" />
                   <div>
                     <div className="text-white font-medium">Phone</div>
-                    <div className="text-white/80">+1 (555) 123-4567</div>
+                    <div className="text-white/80">+44 (0) 20 7946 0958</div>
                   </div>
                 </div>
                 <div className="flex items-center space-x-4">
                   <MapPin className="h-6 w-6 text-blue-200" />
                   <div>
                     <div className="text-white font-medium">Address</div>
-                    <div className="text-white/80">123 Innovation Drive, Tech City, TC 12345</div>
+                    <div className="text-white/80">London, United Kingdom</div>
                   </div>
                 </div>
               </div>
@@ -359,7 +360,7 @@ const Index = () => {
       <footer className="py-12 px-4 border-t border-blue-500/30">
         <div className="container mx-auto text-center">
           <div className="text-2xl font-bold text-white mb-4">shift*</div>
-          <p className="text-white/70 mb-6">Transforming businesses for the digital future</p>
+          <p className="text-white/70 mb-6">UK-based technology solutions provider</p>
           <div className="text-white/50 text-sm">
             © 2024 shift*. All rights reserved.
           </div>
