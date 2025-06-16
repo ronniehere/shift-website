@@ -1,4 +1,3 @@
-
 import { ArrowRight, CheckCircle, Zap, Shield, Users, Mail, Phone, MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -9,7 +8,7 @@ const Index = () => {
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-blue-500/30">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="text-2xl font-bold text-white">*shift.*</div>
+          <div className="text-2xl font-bold text-white">shift*</div>
           <div className="hidden md:flex space-x-8">
             <a href="#services" className="text-white/80 hover:text-white transition-colors">Services</a>
             <a href="#about" className="text-white/80 hover:text-white transition-colors">About</a>
@@ -95,7 +94,7 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold text-white mb-6">Why Choose *shift.*?</h2>
+              <h2 className="text-4xl font-bold text-white mb-6">Why Choose shift*?</h2>
               <p className="text-white/90 text-lg mb-8">
                 We're not just another tech company. We're your partners in digital transformation, 
                 committed to delivering solutions that make a real difference to your business.
@@ -214,10 +213,10 @@ const Index = () => {
       {/* Footer */}
       <footer className="py-12 px-4 border-t border-blue-500/30">
         <div className="container mx-auto text-center">
-          <div className="text-2xl font-bold text-white mb-4">*shift.*</div>
+          <div className="text-2xl font-bold text-white mb-4">shift*</div>
           <p className="text-white/70 mb-6">Transforming businesses for the digital future</p>
           <div className="text-white/50 text-sm">
-            © 2024 *shift.*. All rights reserved.
+            © 2024 shift*. All rights reserved.
           </div>
         </div>
       </footer>
