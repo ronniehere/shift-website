@@ -1,4 +1,5 @@
-import { ArrowRight, CheckCircle, Zap, Shield, Users, Mail, Phone, MapPin } from 'lucide-react';
+
+import { ArrowRight, CheckCircle, Zap, Shield, Users, Mail, Phone, MapPin, Building, Code, Database, Cloud, Lock, Smartphone, Globe, TrendingUp, Award, Target, Briefcase } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 
@@ -10,8 +11,11 @@ const Index = () => {
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="text-2xl font-bold text-white">shift*</div>
           <div className="hidden md:flex space-x-8">
+            <a href="#solutions" className="text-white/80 hover:text-white transition-colors">Solutions</a>
+            <a href="#industries" className="text-white/80 hover:text-white transition-colors">Industries</a>
             <a href="#services" className="text-white/80 hover:text-white transition-colors">Services</a>
             <a href="#about" className="text-white/80 hover:text-white transition-colors">About</a>
+            <a href="#careers" className="text-white/80 hover:text-white transition-colors">Careers</a>
             <a href="#contact" className="text-white/80 hover:text-white transition-colors">Contact</a>
           </div>
           <Button className="bg-blue-600 hover:bg-blue-700 text-white">
@@ -45,13 +49,103 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Solutions Section */}
+      <section id="solutions" className="py-20 px-4">
+        <div className="container mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-white mb-4">Our Solutions</h2>
+            <p className="text-white/80 text-lg max-w-2xl mx-auto">
+              Comprehensive digital solutions tailored to your business needs
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Card className="bg-black/50 backdrop-blur-md border-blue-500/30 hover:bg-black/70 transition-all duration-300 hover:scale-105">
+              <CardContent className="p-8 text-center">
+                <Cloud className="h-12 w-12 text-blue-400 mx-auto mb-4" />
+                <h3 className="text-xl font-semibold text-white mb-3">Cloud Infrastructure</h3>
+                <p className="text-white/80">
+                  Scalable cloud solutions to power your digital transformation journey.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-black/50 backdrop-blur-md border-blue-500/30 hover:bg-black/70 transition-all duration-300 hover:scale-105">
+              <CardContent className="p-8 text-center">
+                <Database className="h-12 w-12 text-blue-300 mx-auto mb-4" />
+                <h3 className="text-xl font-semibold text-white mb-3">Data Analytics</h3>
+                <p className="text-white/80">
+                  Turn your data into actionable insights with advanced analytics platforms.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-black/50 backdrop-blur-md border-blue-500/30 hover:bg-black/70 transition-all duration-300 hover:scale-105">
+              <CardContent className="p-8 text-center">
+                <Smartphone className="h-12 w-12 text-blue-200 mx-auto mb-4" />
+                <h3 className="text-xl font-semibold text-white mb-3">Mobile Solutions</h3>
+                <p className="text-white/80">
+                  Native and cross-platform mobile applications for modern businesses.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Industries Section */}
+      <section id="industries" className="py-20 px-4 bg-blue-900/20">
+        <div className="container mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-white mb-4">Industries We Serve</h2>
+            <p className="text-white/80 text-lg max-w-2xl mx-auto">
+              Specialized expertise across diverse industry verticals
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <Card className="bg-black/30 backdrop-blur-md border-blue-500/30 hover:bg-black/50 transition-all duration-300">
+              <CardContent className="p-6 text-center">
+                <Building className="h-10 w-10 text-blue-400 mx-auto mb-3" />
+                <h3 className="text-lg font-semibold text-white mb-2">Financial Services</h3>
+                <p className="text-white/70 text-sm">Banking, insurance, and fintech solutions</p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-black/30 backdrop-blur-md border-blue-500/30 hover:bg-black/50 transition-all duration-300">
+              <CardContent className="p-6 text-center">
+                <Globe className="h-10 w-10 text-blue-300 mx-auto mb-3" />
+                <h3 className="text-lg font-semibold text-white mb-2">Healthcare</h3>
+                <p className="text-white/70 text-sm">Digital health and medical technology</p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-black/30 backdrop-blur-md border-blue-500/30 hover:bg-black/50 transition-all duration-300">
+              <CardContent className="p-6 text-center">
+                <TrendingUp className="h-10 w-10 text-blue-200 mx-auto mb-3" />
+                <h3 className="text-lg font-semibold text-white mb-2">Retail & E-commerce</h3>
+                <p className="text-white/70 text-sm">Modern commerce platforms and solutions</p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-black/30 backdrop-blur-md border-blue-500/30 hover:bg-black/50 transition-all duration-300">
+              <CardContent className="p-6 text-center">
+                <Code className="h-10 w-10 text-blue-100 mx-auto mb-3" />
+                <h3 className="text-lg font-semibold text-white mb-2">Manufacturing</h3>
+                <p className="text-white/70 text-sm">Industry 4.0 and smart manufacturing</p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Services Section */}
       <section id="services" className="py-20 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-white mb-4">Our Services</h2>
             <p className="text-white/80 text-lg max-w-2xl mx-auto">
-              We offer comprehensive digital solutions to help your business thrive in the modern world
+              End-to-end digital services to accelerate your business growth
             </p>
           </div>
           
@@ -135,8 +229,59 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Careers Section */}
+      <section id="careers" className="py-20 px-4">
+        <div className="container mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-white mb-4">Join Our Team</h2>
+            <p className="text-white/80 text-lg max-w-2xl mx-auto">
+              Be part of a dynamic team that's shaping the future of digital transformation
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <Card className="bg-black/30 backdrop-blur-md border-blue-500/30 hover:bg-black/50 transition-all duration-300">
+              <CardContent className="p-6 text-center">
+                <Target className="h-12 w-12 text-blue-400 mx-auto mb-4" />
+                <h3 className="text-xl font-semibold text-white mb-3">Innovation First</h3>
+                <p className="text-white/80">
+                  Work with cutting-edge technologies and pioneering solutions.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-black/30 backdrop-blur-md border-blue-500/30 hover:bg-black/50 transition-all duration-300">
+              <CardContent className="p-6 text-center">
+                <Award className="h-12 w-12 text-blue-300 mx-auto mb-4" />
+                <h3 className="text-xl font-semibold text-white mb-3">Growth Opportunities</h3>
+                <p className="text-white/80">
+                  Continuous learning and career advancement in a supportive environment.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-black/30 backdrop-blur-md border-blue-500/30 hover:bg-black/50 transition-all duration-300">
+              <CardContent className="p-6 text-center">
+                <Briefcase className="h-12 w-12 text-blue-200 mx-auto mb-4" />
+                <h3 className="text-xl font-semibold text-white mb-3">Work-Life Balance</h3>
+                <p className="text-white/80">
+                  Flexible working arrangements and comprehensive benefits package.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="text-center">
+            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white text-lg px-8 py-3">
+              View Open Positions
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
-      <section id="contact" className="py-20 px-4">
+      <section id="contact" className="py-20 px-4 bg-blue-900/20">
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-white mb-4">Get In Touch</h2>
