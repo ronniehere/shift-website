@@ -1,4 +1,3 @@
-
 import { ArrowRight, CheckCircle, Zap, Shield, Users, Mail, Phone, MapPin, Building, Code, Database, Cloud, Lock, Smartphone, Globe, TrendingUp, Award, Target, Briefcase, Linkedin, Twitter, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -18,6 +17,13 @@ const Index = () => {
     message: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
@@ -93,14 +99,14 @@ const Index = () => {
             <a href="#process" className="text-white/80 hover:text-white transition-colors">Process</a>
             <a href="#contact" className="text-white/80 hover:text-white transition-colors">Contact</a>
           </div>
-          <Button className="bg-blue-600 hover:bg-blue-700 text-white">
+          <Button onClick={scrollToContact} className="bg-blue-600 hover:bg-blue-700 text-white">
             Get Started
           </Button>
         </div>
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-56 pb-20 px-4">
+      <section className="pt-72 pb-20 px-4">
         <div className="container mx-auto text-center">
           <div className="animate-fade-in">
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
@@ -111,7 +117,7 @@ const Index = () => {
               Professional marketing services for businesses that want to leverage technology for exponential results
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white text-lg px-8 py-3">
+              <Button onClick={scrollToContact} size="lg" className="bg-blue-600 hover:bg-blue-700 text-white text-lg px-8 py-3">
                 GET STARTED
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
