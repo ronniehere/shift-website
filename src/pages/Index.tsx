@@ -1,10 +1,86 @@
+
 import { ArrowRight, CheckCircle, Zap, Shield, Users, Mail, Phone, MapPin, Building, Code, Database, Cloud, Lock, Smartphone, Globe, TrendingUp, Award, Target, Briefcase, Linkedin, Twitter, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
+import { Textarea } from '@/components/ui/textarea';
+import { useToast } from '@/hooks/use-toast';
+import { useState } from 'react';
 
 const Index = () => {
+  const { toast } = useToast();
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    company: '',
+    service: '',
+    message: ''
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    // Basic validation
+    if (!formData.name || !formData.email || !formData.message) {
+      toast({
+        title: "Missing Information",
+        description: "Please fill in all required fields (Name, Email, and Message).",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      toast({
+        title: "Invalid Email",
+        description: "Please enter a valid email address.",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    setIsSubmitting(true);
+    
+    try {
+      // Simulate form submission (replace with actual submission logic)
+      await new Promise(resolve => setTimeout(resolve, 2000));
+      
+      toast({
+        title: "Message Sent!",
+        description: "Thank you for your interest. We'll get back to you within 24 hours.",
+      });
+      
+      // Reset form
+      setFormData({
+        name: '',
+        email: '',
+        company: '',
+        service: '',
+        message: ''
+      });
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Something went wrong. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-black via-blue-900 to-black">
       {/* Navigation */}
@@ -192,22 +268,30 @@ const Index = () => {
           <div className="max-w-2xl mx-auto">
             <Card className="bg-black/50 backdrop-blur-md border-blue-500/30">
               <CardContent className="p-8">
-                <form className="space-y-6">
+                <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
-                      <Label className="block text-white font-medium mb-2">Your Name</Label>
+                      <Label className="block text-white font-medium mb-2">Your Name *</Label>
                       <Input 
-                        type="text" 
+                        type="text"
+                        name="name"
+                        value={formData.name}
+                        onChange={handleInputChange}
                         className="w-full px-4 py-3 bg-black/30 border border-blue-500/30 rounded-lg text-white placeholder:text-white/60 focus:outline-none focus:border-blue-400"
                         placeholder="Your name"
+                        required
                       />
                     </div>
                     <div>
-                      <Label className="block text-white font-medium mb-2">Your Email</Label>
+                      <Label className="block text-white font-medium mb-2">Your Email *</Label>
                       <Input 
-                        type="email" 
+                        type="email"
+                        name="email"
+                        value={formData.email}
+                        onChange={handleInputChange}
                         className="w-full px-4 py-3 bg-black/30 border border-blue-500/30 rounded-lg text-white placeholder:text-white/60 focus:outline-none focus:border-blue-400"
                         placeholder="your@email.com"
+                        required
                       />
                     </div>
                   </div>
@@ -215,7 +299,10 @@ const Index = () => {
                   <div>
                     <Label className="block text-white font-medium mb-2">Company Name</Label>
                     <Input 
-                      type="text" 
+                      type="text"
+                      name="company"
+                      value={formData.company}
+                      onChange={handleInputChange}
                       className="w-full px-4 py-3 bg-black/30 border border-blue-500/30 rounded-lg text-white placeholder:text-white/60 focus:outline-none focus:border-blue-400"
                       placeholder="Your company"
                     />
@@ -223,7 +310,12 @@ const Index = () => {
 
                   <div>
                     <Label className="block text-white font-medium mb-2">Service Needed</Label>
-                    <select className="w-full px-4 py-3 bg-black/30 border border-blue-500/30 rounded-lg text-white focus:outline-none focus:border-blue-400">
+                    <select 
+                      name="service"
+                      value={formData.service}
+                      onChange={handleInputChange}
+                      className="w-full px-4 py-3 bg-black/30 border border-blue-500/30 rounded-lg text-white focus:outline-none focus:border-blue-400"
+                    >
                       <option value="">Select a service</option>
                       <option value="lead-generation">AI-Powered Lead Generation</option>
                       <option value="paid-ads">Full-Funnel Paid Ad Campaigns</option>
@@ -233,16 +325,24 @@ const Index = () => {
                   </div>
 
                   <div>
-                    <Label className="block text-white font-medium mb-2">Your Message</Label>
-                    <textarea 
+                    <Label className="block text-white font-medium mb-2">Your Message *</Label>
+                    <Textarea 
+                      name="message"
+                      value={formData.message}
+                      onChange={handleInputChange}
                       rows={4}
                       className="w-full px-4 py-3 bg-black/30 border border-blue-500/30 rounded-lg text-white placeholder:text-white/60 focus:outline-none focus:border-blue-400 resize-none"
                       placeholder="Tell us about your business goals..."
-                    ></textarea>
+                      required
+                    />
                   </div>
                   
-                  <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white">
-                    GET STARTED
+                  <Button 
+                    type="submit"
+                    disabled={isSubmitting}
+                    className="w-full bg-blue-600 hover:bg-blue-700 text-white disabled:opacity-50"
+                  >
+                    {isSubmitting ? 'SENDING...' : 'GET STARTED'}
                   </Button>
                 </form>
               </CardContent>
