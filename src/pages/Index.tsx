@@ -1,4 +1,3 @@
-
 import { ArrowRight, CheckCircle, Zap, Shield, Users, Mail, Phone, MapPin, Building, Code, Database, Cloud, Lock, Smartphone, Globe, TrendingUp, Award, Target, Briefcase, Linkedin, Twitter, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -93,7 +92,7 @@ const Index = () => {
       {/* Navigation */}
       <nav className="bg-black/20 backdrop-blur-sm border-b border-white/10 fixed w-full top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="text-2xl font-bold text-white">MarketingPro</div>
+          <div className="text-2xl font-bold text-white">shift*</div>
           <div className="hidden md:flex space-x-8">
             <a href="#services" className="text-white/80 hover:text-white transition-colors">Services</a>
             <a href="#about" className="text-white/80 hover:text-white transition-colors">About</a>
@@ -364,7 +363,7 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
-              <div className="text-2xl font-bold text-white mb-4">MarketingPro</div>
+              <div className="text-2xl font-bold text-white mb-4">shift*</div>
             </div>
             
             <div>
@@ -405,7 +404,7 @@ const Index = () => {
           
           <div className="text-center pt-8 border-t border-blue-500/30">
             <div className="text-white/50 text-sm">
-              © 2024 MarketingPro. All rights reserved.
+              © 2024 shift*. All rights reserved.
             </div>
           </div>
         </div>
