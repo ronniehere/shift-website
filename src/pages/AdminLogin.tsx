@@ -13,8 +13,8 @@ const AdminLogin = () => {
   const navigate = useNavigate();
 
   // Admin credentials
-  const ADMIN_USERNAME = 'admin';
-  const ADMIN_PASSWORD = 'MarketingPro2024!';
+  const ADMIN_USERNAME = 'shiftadmin';
+  const ADMIN_PASSWORD = 'Shift2024#Admin!';
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
@@ -70,8 +70,8 @@ const AdminLogin = () => {
           </form>
           <div className="mt-6 p-4 bg-gray-100 rounded-lg text-sm text-gray-600">
             <p><strong>Admin Credentials:</strong></p>
-            <p>Username: admin</p>
-            <p>Password: MarketingPro2024!</p>
+            <p>Username: shiftadmin</p>
+            <p>Password: Shift2024#Admin!</p>
           </div>
         </CardContent>
       </Card>
