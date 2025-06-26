@@ -88,14 +88,15 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-black via-blue-900 to-black">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-blue-500/30">
+      <nav className="bg-black/20 backdrop-blur-sm border-b border-white/10 fixed w-full top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="text-2xl font-bold text-white">shift*</div>
+          <div className="text-2xl font-bold text-white">MarketingPro</div>
           <div className="hidden md:flex space-x-8">
-            <a href="#about" className="text-white/80 hover:text-white transition-colors">About</a>
             <a href="#services" className="text-white/80 hover:text-white transition-colors">Services</a>
+            <a href="#about" className="text-white/80 hover:text-white transition-colors">About</a>
+            <a href="/blog" className="text-white/80 hover:text-white transition-colors">Blog</a>
             <a href="#process" className="text-white/80 hover:text-white transition-colors">Process</a>
             <a href="#contact" className="text-white/80 hover:text-white transition-colors">Contact</a>
           </div>
@@ -362,14 +363,15 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
-              <div className="text-2xl font-bold text-white mb-4">shift*</div>
+              <div className="text-2xl font-bold text-white mb-4">MarketingPro</div>
             </div>
             
             <div>
               <h4 className="text-white font-semibold mb-4">Navigation</h4>
               <div className="space-y-2">
-                <a href="#about" className="block text-white/70 hover:text-white transition-colors">About</a>
                 <a href="#services" className="block text-white/70 hover:text-white transition-colors">Services</a>
+                <a href="#about" className="block text-white/70 hover:text-white transition-colors">About</a>
+                <a href="/blog" className="block text-white/70 hover:text-white transition-colors">Blog</a>
                 <a href="#process" className="block text-white/70 hover:text-white transition-colors">Process</a>
                 <a href="#contact" className="block text-white/70 hover:text-white transition-colors">Contact</a>
               </div>
@@ -401,7 +403,7 @@ const Index = () => {
           
           <div className="text-center pt-8 border-t border-blue-500/30">
             <div className="text-white/50 text-sm">
-              © 2024 shift*. All rights reserved.
+              © 2024 MarketingPro. All rights reserved.
             </div>
           </div>
         </div>
