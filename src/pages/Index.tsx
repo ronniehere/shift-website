@@ -1,3 +1,4 @@
+
 import { ArrowRight, CheckCircle, Zap, Shield, Users, Mail, Phone, MapPin, Building, Code, Database, Cloud, Lock, Smartphone, Globe, TrendingUp, Award, Target, Briefcase, Linkedin, Twitter, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -397,6 +398,7 @@ const Index = () => {
               <div className="space-y-2">
                 <a href="#" className="block text-white/70 hover:text-white transition-colors">Privacy Policy</a>
                 <a href="#" className="block text-white/70 hover:text-white transition-colors">Terms of Service</a>
+                <a href="/admin/login" className="block text-white/70 hover:text-white transition-colors">Admin</a>
               </div>
             </div>
           </div>
