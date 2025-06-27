@@ -122,6 +122,16 @@ const Index = () => {
                 GET STARTED
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
+              <Button 
+                asChild 
+                variant="outline" 
+                size="lg" 
+                className="border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white text-lg px-8 py-3"
+              >
+                <a href="https://calendly.com/abe-sshift/15-minute-meeting-for-shift" target="_blank" rel="noopener noreferrer">
+                  Schedule a Call
+                </a>
+              </Button>
             </div>
           </div>
         </div>
