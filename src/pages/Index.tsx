@@ -95,6 +95,7 @@ const Index = () => {
           <div className="text-2xl font-bold text-white">shift*</div>
           <div className="hidden md:flex space-x-8">
             <a href="#services" className="text-white/80 hover:text-white transition-colors">Services</a>
+            <a href="/software-development" className="text-white/80 hover:text-white transition-colors">Software</a>
             <a href="#about" className="text-white/80 hover:text-white transition-colors">About</a>
             <a href="/blog" className="text-white/80 hover:text-white transition-colors">Blog</a>
             <a href="#process" className="text-white/80 hover:text-white transition-colors">Process</a>
@@ -381,6 +382,7 @@ const Index = () => {
               <h4 className="text-white font-semibold mb-4">Navigation</h4>
               <div className="space-y-2">
                 <a href="#services" className="block text-white/70 hover:text-white transition-colors">Services</a>
+                <a href="/software-development" className="block text-white/70 hover:text-white transition-colors">Software</a>
                 <a href="#about" className="block text-white/70 hover:text-white transition-colors">About</a>
                 <a href="/blog" className="block text-white/70 hover:text-white transition-colors">Blog</a>
                 <a href="#process" className="block text-white/70 hover:text-white transition-colors">Process</a>
