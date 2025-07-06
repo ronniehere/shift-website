@@ -68,11 +68,6 @@ const AdminLogin = () => {
               Login
             </Button>
           </form>
-          <div className="mt-6 p-4 bg-gray-100 rounded-lg text-sm text-gray-600">
-            <p><strong>Admin Credentials:</strong></p>
-            <p>Username: shiftadmin</p>
-            <p>Password: Shift2024#Admin!</p>
-          </div>
         </CardContent>
       </Card>
     </div>
